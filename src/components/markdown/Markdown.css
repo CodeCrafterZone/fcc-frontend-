@@ -1,0 +1,49 @@
+body {
+  background-color: #87b5b5;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px; /* Ajout de padding pour plus d'espace autour des éléments */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Utilisation de min-height pour empêcher le corps de devenir trop petit */
+}
+
+#editor,
+#preview {
+  width: 60vw; /* Largeur de 60% de la largeur de la fenêtre */
+  min-width: 300px; /* Définir une largeur minimale pour éviter que les éléments ne deviennent trop étroits */
+  min-height: 300px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #c0d8d8;
+  color: #000000; /* Texte noir */
+  font-size: 16px;
+  box-sizing: border-box; /* Inclure les bordures et le padding dans la largeur */
+}
+
+#editor {
+  resize: vertical;
+  max-height: 60vh; /* Hauteur maximale de 60% de la hauteur de la fenêtre */
+  overflow-y: auto; /* Activer le défilement vertical si nécessaire */
+}
+
+#preview {
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4c4c4c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333;
+}

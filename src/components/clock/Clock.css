@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #1f555c; /* Nouvelle couleur de fond */
+  color: white; /* Couleur de texte */
+}
+
+.container {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#break-label,
+#session-label {
+  display: block; /* Afficher les éléments sur une ligne séparée */
+  margin-bottom: 5px; /* Espacement entre les éléments */
+}
+
+#break-decrement,
+#break-length,
+#break-increment {
+  margin-right: 10px; /* Espacement entre les éléments */
+}
+
+#session-decrement,
+#session-length,
+#session-increment {
+  margin-right: 10px; /* Espacement entre les éléments */
+}
+
+.length-control {
+  margin-bottom: 20px;
+  display: inline-block; /* Afficher les éléments côte à côte */
+}
+.length-control + .length-control {
+  margin-left: 20px; /* Espacement entre les éléments */
+  margin-right: 10px; /* Espacement entre les éléments */
+}
+
+.timer {
+  margin-bottom: 20px;
+  border-radius: 30px;
+  border: 3px solid #13353a;
+  padding: 20px;
+  font-size: 1.5em; /* Taille de police agrandie */
+}
+
+.timer-control button {
+  margin: 0 10px;
+}
+
+.timer-control button:first-child {
+  margin-left: 0;
+}
+
+.timer-control button:last-child {
+  margin-right: 0;
+}
+
+.timer-control {
+  margin-top: 20px;
+}
+
+#reset {
+  font-size: 1em; /* Taille de police agrandie */
+}

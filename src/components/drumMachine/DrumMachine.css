@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Fond gris clair pour tout le corps */
+}
+
+#drum-machine {
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  background-color: #666; /* Fond gris foncé pour la machine à tambour */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffd65f; /* Bordure jaune */
+  display: flex;
+  flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+  justify-content: center;
+}
+
+#display {
+  font-size: 24px;
+  margin-bottom: 20px;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff; /* Texte blanc pour le contenu de l'affichage */
+}
+
+.drum-pad {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  flex: 0 0 calc(33.33% - 20px); /* Permet de spécifier la largeur pour que trois éléments tiennent sur une ligne avec des marges */
+}
+
+.drum-pad:hover {
+  background-color: #888; /* Couleur de fond plus foncée au survol */
+}
+
+.clip {
+  display: none;
+}
+
+/* Afficher les éléments audio pour la démo */
+.clip {
+  display: block;
+  margin-top: 10px;
+}
+
+/*
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  */

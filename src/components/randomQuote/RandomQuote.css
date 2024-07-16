@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#quote-box {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#author {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+#buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Espacement entre les boutons */
+}
+
+#new-quote,
+#tweet-quote {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem; /* Taille de la police */
+  font-family: Arial, sans-serif; /* Police */
+}
+
+#new-quote {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  margin-right: 80px; /* Espacement à droite */
+}
+
+#new-quote:hover {
+  background-color: #0056b3;
+}
+
+#tweet-quote {
+  background-color: #1da1f2;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 80px; /* Espacement à gauche */
+}
+
+#tweet-quote:hover {
+  background-color: #0e87d4;
+}
+
+footer {
+  margin-top: 20px;
+  font-style: italic;
+  color: #666;
+}
+
+#made-by {
+  font-size: 0.8rem;
+}
